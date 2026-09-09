@@ -8,7 +8,7 @@
 **Негатив у всех 75 кадров одинаковый**, вбить один раз и не менять:
 
 ```
-smooth surfaces, rounded edges, curved walls, realistic geometry, photorealism, low-poly non-cubic shapes, sculpted terrain, HUD, crosshair, hotbar, inventory, user interface, text, letters, numbers, watermark, signature, logo, blurry, fisheye, distorted perspective, tilted horizon, changed art style
+smooth surfaces, curved walls, rounded domes, smooth arches, sculpted detail, sub-block detail, carved ornament, thin mouldings, marble sculpture, realistic statue, detailed face, cloth folds, high-poly, realistic geometry, photorealism, stylized voxel art, smooth gradients, soft rounded edges, high resolution textures, smooth terrain slope, rounded topiary tree, HUD, crosshair, hotbar, user interface, text, letters, numbers, watermark, signature, logo, blurry, fisheye, distorted perspective, tilted horizon, changed art style
 ```
 
 ## Самое важное
@@ -39,7 +39,17 @@ smooth surfaces, rounded edges, curved walls, realistic geometry, photorealism, 
 BASE IMAGE: none. This is the first frame of the series - generate it from scratch.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -71,7 +81,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -103,7 +123,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -135,7 +165,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -167,7 +207,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -199,7 +249,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -231,7 +291,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -263,7 +333,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -295,7 +375,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -327,7 +417,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -359,7 +459,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -391,7 +501,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -423,7 +543,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -455,7 +585,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -487,7 +627,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -519,7 +669,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -551,7 +711,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -583,7 +753,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
@@ -619,7 +799,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -652,7 +842,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -685,7 +885,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -718,7 +928,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -751,7 +971,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -784,7 +1014,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -817,7 +1057,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -850,7 +1100,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -883,7 +1143,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -916,7 +1186,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -949,7 +1229,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -982,7 +1272,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -1015,7 +1315,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -1048,7 +1358,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -1081,7 +1401,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -1114,7 +1444,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
@@ -1152,7 +1492,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1160,22 +1510,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1198,7 +1556,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1206,22 +1574,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1244,7 +1620,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1252,22 +1638,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1290,7 +1684,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1298,22 +1702,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1336,7 +1748,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1344,22 +1766,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1382,7 +1812,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1390,22 +1830,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1428,7 +1876,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1436,22 +1894,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1474,7 +1940,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1482,22 +1958,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1520,7 +2004,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1528,22 +2022,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1566,7 +2068,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1574,22 +2086,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1612,7 +2132,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1620,22 +2150,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1658,7 +2196,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1666,22 +2214,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1704,7 +2260,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1712,22 +2278,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1750,7 +2324,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1758,22 +2342,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1796,7 +2388,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1804,22 +2406,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1842,7 +2452,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
@@ -1850,22 +2470,30 @@ NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1891,7 +2519,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -1899,22 +2537,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1937,7 +2583,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -1945,22 +2601,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -1983,7 +2647,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -1991,22 +2665,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2029,7 +2711,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2037,22 +2729,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2075,7 +2775,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2083,22 +2793,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2121,7 +2839,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2129,22 +2857,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2167,7 +2903,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2175,22 +2921,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2213,7 +2967,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2221,22 +2985,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2259,7 +3031,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2267,22 +3049,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2305,7 +3095,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2313,22 +3113,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2351,7 +3159,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2359,22 +3177,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2397,7 +3223,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2405,22 +3241,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2443,7 +3287,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2451,22 +3305,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2489,7 +3351,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2497,22 +3369,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2535,7 +3415,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2543,22 +3433,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2581,7 +3479,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2589,22 +3497,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2627,7 +3543,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2635,22 +3561,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2673,7 +3607,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2681,22 +3625,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2719,7 +3671,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2727,22 +3689,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2765,7 +3735,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2773,22 +3753,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2811,7 +3799,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2819,22 +3817,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2857,7 +3863,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2865,22 +3881,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2903,7 +3927,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2911,22 +3945,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2949,7 +3991,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -2957,22 +4009,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 
@@ -2995,7 +4055,17 @@ horizon line, perspective, lighting and every anchor object exactly as they alre
 are. Change only what is listed under CHANGE below.
 
 STYLE:
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block textures, rendered with a shader pack such as Complementary or BSL.
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof, step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated with stairs and slabs, and the stair-stepping is clearly visible in the silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window frames. A window is one or two glass-pane blocks. A cornice is one row of stairs.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse 16x16 pixel texture. No smooth gradients across a surface, no baked sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone bricks, deepslate, cobblestone, glass panes.
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held items, no text, no watermark.
 
 CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
@@ -3003,22 +4073,30 @@ NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at 
 
 ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
-  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
-  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
-  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
-  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
-  hand, same sabre in the left, same green-bronze colour, same proportions, same
-  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
-  soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
-  roof. One square clock tower rises from the centre of the facade, with a round clock
-  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
-  copper-domed turrets, one at each end of the roof. Always this exact building in
-  this exact place.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
-  small square stone surround. Always the same tree in the same spot.
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
+  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
+  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
+  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
+  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
+  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
+  diagonally. It reads as a king only from a distance, exactly the way a player-built
+  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
+  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the right hand, same block sabre in the left, same copper colour, same height.
+  NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
+  horse, or any other figure.
+- THE PALACE, a Minecraft build on the block grid: a rectangular building 40 blocks
+  long and 10 blocks tall to the eaves, walls of red terracotta and brick blocks with
+  smooth quartz corner columns. Windows are identical 1x2 glass-pane openings in a
+  regular row. The roof is oxidised copper blocks and copper stairs in a simple
+  stepped gable, no curves. One square clock tower 8 blocks wide rises 12 blocks above
+  the roof, with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets, one at each end of
+  the roof. Always this exact build in this exact place.
+- THE LIME TREE: one Minecraft tree at the right edge of the square, in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary. Always the same tree in the same spot.
 - THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
   column. Same paving in every image.
 

@@ -62,81 +62,109 @@
 Тогда разрушенный дворец гарантированно окажется тем же дворцом, а поваленная
 статуя — той же статуей. На этом и держится приём «до/после».
 
+### Почему картинки не похожи на игру
+
+Формулировка «Minecraft-style voxel world» читается моделью как «стилизованный
+воксель-арт», а это другой жанр: гладкие скруглённые формы, запечённое освещение,
+сколь угодно мелкая деталь. Отсюда все провалы. Что именно выдаёт подделку:
+
+| Что не так | Как в игре на самом деле |
+|---|---|
+| Статуя вылеплена: доспех, складки плаща, лицо | Чурбаны из блоков, узнаётся только издали |
+| Круглые купола и арки | Ступеньки из лестниц и плит, ступенчатый силуэт |
+| Тонкие карнизы, наличники, лепнина | Ничего мельче одного блока не существует |
+| Гладкие градиенты по поверхности | Каждая грань плоская, с грубой текстурой 16×16 |
+| Плавные склоны рельефа | Рельеф поднимается ступенями в целый блок |
+| Круглая стриженая крона дерева | Ствол 1×1 из брёвен, кубическое облако листвы |
+
+Отсюда три приёма, которые чинят картинку:
+
+1. **Просить скриншот, а не стиль.** `A raw in-game screenshot from Minecraft
+   Java Edition, vanilla 16x16 textures` вместо `Minecraft-style`.
+2. **Считать в блоках.** Не «четырёхэтажный дворец», а «40 блоков в длину,
+   10 блоков до карниза». Числа привязывают модель к сетке.
+3. **Называть настоящие блоки игры.** `oxidised copper`, `red terracotta`,
+   `stone bricks`, `glass panes`, `spruce planks`. Это самый сильный сигнал:
+   модель знает палитру Minecraft по названиям.
+
+### Блок BLOCK RULES — вставлять в оба промпта дословно
+
+```
+A raw in-game screenshot from Minecraft Java Edition, vanilla 16x16 block
+textures, rendered with a shader pack such as Complementary or BSL.
+
+STRICT BLOCK RULES - this is what makes it read as the real game:
+- The whole world is made of 1-meter cubes on a strict grid. Every wall, roof,
+  step and object snaps to that grid. Nothing is smaller than one block.
+- NO smooth curves anywhere. Domes, arches and round towers are approximated
+  with stairs and slabs, and the stair-stepping is clearly visible in the
+  silhouette.
+- NO sub-block detail: no thin mouldings, no carved ornament, no fine window
+  frames. A window is one or two glass-pane blocks. A cornice is one row of
+  stair blocks.
+- Every block face is FLAT and uniformly shaded, carrying a visible coarse
+  16x16 pixel texture. No smooth gradients across a surface, no baked
+  sculptural shading.
+- Terrain rises in whole-block steps, never as a smooth slope. Water sits as a
+  flat surface at block level.
+- Trees are Minecraft trees: a straight 1x1 trunk of log blocks and a blocky
+  cloud of cubic leaf blocks with noisy leaf texture. Never rounded topiary.
+- Minecraft scale: a villager is 2 blocks tall; buildings are counted in blocks.
+
+Built from real Minecraft blocks: red terracotta and bricks, smooth stone and
+quartz for trim, oxidised copper for green roofs, spruce and oak planks, stone
+bricks, deepslate, cobblestone, glass panes.
+
+No HUD, no crosshair, no hotbar, no hearts, no interface, no hands, no held
+items, no text, no watermark.
+```
+
 ### Блок якорей — вставлять в оба промпта дословно
 
 ```
-ANCHOR OBJECTS - the SAME physical objects in both images. Never redesign them,
-never invent a different version:
-- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth
-  grey-brown stone on a square two-step stone plinth. On top stands ONE bronze
-  statue of a crowned king: dark weathered green-bronze, in armour and a long
-  cloak, holding a tall thin cross upright in his RIGHT hand and a curved sabre
-  pointing downward in his LEFT hand. ALWAYS this same statue - same crown, same
-  cross in the right hand, same sabre in the left, same green-bronze colour, same
-  proportions. NEVER replace it with an angel, an eagle, an orb, a globe, a woman,
-  a soldier, a horse, or any other figure.
-- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
-  with pale cream stone corner quoins and window frames, a steep green
-  oxidised-copper roof. One square clock tower rises from the centre of the facade,
-  with a round clock face and a slim copper-green spire topped by a golden ball.
-  Two smaller copper-domed turrets, one at each end of the roof.
-- THE LIME TREE: one broad-crowned lime tree at the right edge of the square.
+ANCHOR OBJECTS - the SAME physical objects in both images, and every one of them
+is a BUILD made of blocks, never a sculpture:
 
-In the ruined version these are still THESE objects in a damaged state: the same
-statue lying broken on the ground, the same palace burnt out, the same tree as a
-charred stump. Never swap them for a different design.
-```
+- THE COLUMN AND ITS STATUE: the column is a 2x2 shaft of smooth stone blocks,
+  16 blocks tall, on a stepped stone-brick plinth 6 blocks wide. On top stands a
+  crude blocky figure assembled from oxidised copper blocks, about 8 blocks
+  tall: the body is a 2x1 column of blocks, each arm is a single 1x1 column of
+  blocks, the head is one block with a small crown of copper stairs on it. The
+  RIGHT arm holds a cross made of five blocks in a plus shape. The LEFT arm
+  holds a sabre made of three blocks stepped diagonally. It reads as a crowned
+  king only from a distance, exactly the way a player-built Minecraft statue
+  does. NO face, NO armour detail, NO cloth folds, NO smooth curves, NO sculpted
+  anatomy. NEVER an angel, an eagle, an orb, a globe, a woman or a soldier.
 
-### 3.1 Первая генерация — половина 2026
+- THE PALACE: a rectangular building 40 blocks long and 10 blocks tall to the
+  eaves, walls of red terracotta and brick blocks with smooth quartz corner
+  columns. Windows are identical 1x2 glass-pane openings in a regular row. The
+  roof is oxidised copper blocks and copper stairs in a simple stepped gable, no
+  curves. One square clock tower 8 blocks wide rises 12 blocks above the roof,
+  with a flat square clock face on its front and a stepped copper spire of
+  stairs and slabs above it. Two smaller stepped copper turrets at the roof ends.
 
-Блок стиля, затем блок якорей, затем:
+- THE LIME TREE: one Minecraft tree at the right edge of the square - a straight
+  1x1 trunk of oak logs with a blocky cloud of cubic leaf blocks above it.
 
-```
-ONE single continuous scene filling the whole frame. NO split screen, NO divider,
-NO collage, NO before/after comparison, NO border, NO text, NO letters, NO numbers,
-NO flag, NO logo.
-
-Eye-level view across a cobbled city square in a European capital, fully rebuilt
-and alive in 2026. The palace described above stands in the centre-right of the
-frame, its clock tower a strong silhouette against the sky. The column with its
-statue stands upright and whole at the left, against open sky. Colourful restored
-townhouses close the left edge. The lime tree at the right edge. Outdoor cafe
-tables, tourists, flower stalls, a cluster of modern glass skyscrapers far behind
-the rooflines. Bright summer day, deep blue sky with blocky white clouds, rich
-saturated colours.
-
-COMPOSITION: keep the column and the clock tower in the central area of the frame,
-the image will be cropped. Strong readable silhouettes against the sky.
-```
-
-### 3.2 Вторая генерация — половина 1945, правкой первой
-
-**Приложить к запросу картинку 2026.** Блок стиля, блок якорей, затем:
-
-```
-BASE IMAGE: the 2026 square is attached. Build this image by EDITING that image.
-Keep the camera position, the framing, the horizon line and the perspective
-EXACTLY as they are. The buildings must stay recognisably the same buildings.
-
-CHANGE: it is now 1945 and the city has been destroyed. The palace is a burnt-out
-shell of the SAME building: roof gone, upper floors collapsed, empty black window
-holes, but the corner clock tower still standing tall enough to recognise. The
-SAME column has been toppled - it lies broken across the foreground rubble, and
-the SAME crowned king statue lies face down on the cobbles, still holding its
-cross and sabre. The townhouses on the left are hollow shells. The lime tree is a
-blackened stump. Mounds of broken brick fill the square. Thin cold smoke, drifting
-ash, patches of snow. Overcast winter sky, desaturated grey-brown palette, no
-fires, no people.
+In the ruined version these are still THESE builds in a damaged state: the same
+block statue lying broken on the ground with its blocks scattered, the same
+palace burnt out, the same tree reduced to a bare trunk. Never swap them for a
+different design, and never make the ruins smooth or sculpted.
 ```
 
 ### 3.3 Негатив для обеих
 
 ```
-smooth surfaces, rounded edges, curved walls, realistic geometry, photorealism,
-low-poly non-cubic shapes, HUD, crosshair, hotbar, user interface, text, letters,
-numbers, watermark, signature, logo, flag, split screen, collage, border, frame,
-blurry, fisheye, distorted perspective, tilted horizon, different statue,
-different building, angel statue, eagle statue, orb, globe
+smooth surfaces, curved walls, rounded domes, smooth arches, sculpted detail,
+sub-block detail, carved ornament, thin mouldings, marble sculpture, realistic
+statue, detailed face, cloth folds, sculpted anatomy, high-poly, realistic
+geometry, photorealism, stylized voxel art, smooth gradients, soft rounded
+edges, high resolution textures, smooth terrain slope, rounded topiary tree,
+HUD, crosshair, hotbar, user interface, text, letters, numbers, watermark,
+signature, logo, flag, split screen, collage, border, frame, blurry, fisheye,
+distorted perspective, tilted horizon, different statue, different building,
+angel statue, eagle statue, orb, globe
 ```
 
 `split screen, collage, border, frame` обязательны: без них модель регулярно
