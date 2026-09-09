@@ -44,59 +44,89 @@
 
 ## 3. Промпты
 
-Генерить **две половины отдельно**, не одной картинкой: модель не удержит сплит и всё равно наврёт в границе. Формат каждой половины — **квадрат 1:1**, дальше инструмент сам обрежет по центру до 8:9.
+### Порядок генерации — это главное
 
-В промптах нет ни года, ни флага, ни единой буквы — всё это накладывается скриптом. Модель врёт в цифрах и в пропорциях флага, доверять ей это нельзя.
+Не генерить обе половины по отдельности с нуля. Так модель каждый раз изобретает
+новую статую и новое здание, и превью разваливается: слева один памятник, справа
+другой.
 
-Блок стиля — тот же, что во всём ролике. Иначе превью не сойдётся с содержимым.
-
-### 3.1 Левая половина — 1945
-
-```
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic
-blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid
-seams on every face. No smooth curves, no rounded shapes, no organic silhouettes,
-no bevels, no sculpted detail. Rendered as a game screenshot through a modern
-shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp
-saturated colours, smooth sky gradient, light atmospheric haze on the far
-background. No HUD, no crosshair, no hotbar, no interface, no hands, no held
-items, no text, no watermark, no signature.
-
-Eye-level view across a ruined cobbled city square in a destroyed European
-capital in 1945. In the right half of the frame stands the burnt-out shell of a
-large royal palace: roof gone, upper floors collapsed, empty black window holes,
-one jagged corner tower still standing tall enough to read as a silhouette. A
-tall stone column with a statue lies broken across the foreground rubble, its
-sculpted figure face down on the cobbles. Mounds of broken brick fill the square.
-A blackened tree stump at the right edge. Thin cold smoke, drifting ash, patches
-of snow. Overcast winter sky, desaturated grey-brown palette, no fires.
-Composition: strong readable silhouettes against the sky, the lower third of the
-frame kept simple and dark. Square 1:1 composition.
-```
-
-### 3.2 Правая половина — 2026
+Правильный порядок:
 
 ```
-Minecraft-style voxel world. Every object is built from uniform 1-meter cubic
-blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid
-seams on every face. No smooth curves, no rounded shapes, no organic silhouettes,
-no bevels, no sculpted detail. Rendered as a game screenshot through a modern
-shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp
-saturated colours, smooth sky gradient, light atmospheric haze on the far
-background. No HUD, no crosshair, no hotbar, no interface, no hands, no held
-items, no text, no watermark, no signature.
+1. Сгенерировать половину 2026 с нуля — она самая детальная.
+2. Выбрать удачный вариант.
+3. Приложить эту картинку к запросу и попросить ПЕРЕДЕЛАТЬ её в 1945:
+   те же здания, тот же ракурс, но в руинах.
+```
 
-Eye-level view across the SAME cobbled city square, fully rebuilt and alive in
-2026, from the exact same camera position and the same angle. In the right half
-of the frame stands the restored royal palace: warm terracotta and cream facade,
-green copper roof, the corner clock tower complete and standing in the same
-place as the ruined one. The tall stone column stands upright and whole at the
-left, its statue against open sky. Colourful restored townhouses close the left
-edge. A big leafy lime tree at the right edge. Outdoor cafe tables, tourists,
-flower stalls, a modern glass skyscraper cluster far behind the rooflines.
-Bright summer day, deep blue sky with blocky white clouds, rich saturated
-colours. Composition: strong readable silhouettes against the sky, the lower
-third of the frame kept simple. Square 1:1 composition.
+Тогда разрушенный дворец гарантированно окажется тем же дворцом, а поваленная
+статуя — той же статуей. На этом и держится приём «до/после».
+
+### Блок якорей — вставлять в оба промпта дословно
+
+```
+ANCHOR OBJECTS - the SAME physical objects in both images. Never redesign them,
+never invent a different version:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth
+  grey-brown stone on a square two-step stone plinth. On top stands ONE bronze
+  statue of a crowned king: dark weathered green-bronze, in armour and a long
+  cloak, holding a tall thin cross upright in his RIGHT hand and a curved sabre
+  pointing downward in his LEFT hand. ALWAYS this same statue - same crown, same
+  cross in the right hand, same sabre in the left, same green-bronze colour, same
+  proportions. NEVER replace it with an angel, an eagle, an orb, a globe, a woman,
+  a soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade,
+  with a round clock face and a slim copper-green spire topped by a golden ball.
+  Two smaller copper-domed turrets, one at each end of the roof.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square.
+
+In the ruined version these are still THESE objects in a damaged state: the same
+statue lying broken on the ground, the same palace burnt out, the same tree as a
+charred stump. Never swap them for a different design.
+```
+
+### 3.1 Первая генерация — половина 2026
+
+Блок стиля, затем блок якорей, затем:
+
+```
+ONE single continuous scene filling the whole frame. NO split screen, NO divider,
+NO collage, NO before/after comparison, NO border, NO text, NO letters, NO numbers,
+NO flag, NO logo.
+
+Eye-level view across a cobbled city square in a European capital, fully rebuilt
+and alive in 2026. The palace described above stands in the centre-right of the
+frame, its clock tower a strong silhouette against the sky. The column with its
+statue stands upright and whole at the left, against open sky. Colourful restored
+townhouses close the left edge. The lime tree at the right edge. Outdoor cafe
+tables, tourists, flower stalls, a cluster of modern glass skyscrapers far behind
+the rooflines. Bright summer day, deep blue sky with blocky white clouds, rich
+saturated colours.
+
+COMPOSITION: keep the column and the clock tower in the central area of the frame,
+the image will be cropped. Strong readable silhouettes against the sky.
+```
+
+### 3.2 Вторая генерация — половина 1945, правкой первой
+
+**Приложить к запросу картинку 2026.** Блок стиля, блок якорей, затем:
+
+```
+BASE IMAGE: the 2026 square is attached. Build this image by EDITING that image.
+Keep the camera position, the framing, the horizon line and the perspective
+EXACTLY as they are. The buildings must stay recognisably the same buildings.
+
+CHANGE: it is now 1945 and the city has been destroyed. The palace is a burnt-out
+shell of the SAME building: roof gone, upper floors collapsed, empty black window
+holes, but the corner clock tower still standing tall enough to recognise. The
+SAME column has been toppled - it lies broken across the foreground rubble, and
+the SAME crowned king statue lies face down on the cobbles, still holding its
+cross and sabre. The townhouses on the left are hollow shells. The lime tree is a
+blackened stump. Mounds of broken brick fill the square. Thin cold smoke, drifting
+ash, patches of snow. Overcast winter sky, desaturated grey-brown palette, no
+fires, no people.
 ```
 
 ### 3.3 Негатив для обеих
@@ -105,27 +135,29 @@ third of the frame kept simple. Square 1:1 composition.
 smooth surfaces, rounded edges, curved walls, realistic geometry, photorealism,
 low-poly non-cubic shapes, HUD, crosshair, hotbar, user interface, text, letters,
 numbers, watermark, signature, logo, flag, split screen, collage, border, frame,
-blurry, fisheye, distorted perspective, tilted horizon
+blurry, fisheye, distorted perspective, tilted horizon, different statue,
+different building, angel statue, eagle statue, orb, globe
 ```
 
-`split screen, collage, border, frame` в негативе обязательны: без них модель регулярно сама рисует сплит внутри половины.
+`split screen, collage, border, frame` обязательны: без них модель регулярно
+рисует сплит внутри одной половины. `different statue, angel statue, eagle statue,
+orb, globe` — прямая страховка от подмены памятника.
 
-### 3.4 Вариант B — левая половина 1926
+### 3.4 Вариант B — половина 1926
 
-Тот же блок стиля, дальше:
+Тоже правкой картинки 2026, с тем же блоком якорей:
 
 ```
-Eye-level view across a cobbled city square in a European capital in 1926. In the
-right half of the frame stands a large royal palace with a cream neoclassical
-facade, green copper roof and a corner clock tower. A tall stone column with a
-statue stands at the left against open sky. An old red tram on rails crosses the
-foreground, gas street lamps on iron posts, people in long coats and hats,
-a horse cart. Grey overcast morning, muted period palette, no modern objects
-of any kind. Composition: strong readable silhouettes against the sky, the lower
-third of the frame kept simple. Square 1:1 composition.
-```
+BASE IMAGE: the 2026 square is attached. Keep the camera, framing, horizon and
+perspective exactly. The palace, the column with its statue and the townhouses
+stay the SAME buildings.
 
----
+CHANGE: it is now 1926. Remove every modern object: no glass skyscrapers, no cafe
+tables, no tourists in modern clothes, no flower stalls. An old red tram on rails
+crosses the foreground, gas street lamps on iron posts, people in long coats and
+hats, a horse cart. The facades are darker and soot-stained. Grey overcast
+morning, muted period palette.
+```
 
 ## 4. Сборка
 

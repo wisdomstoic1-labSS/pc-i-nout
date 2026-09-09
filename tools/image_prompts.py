@@ -70,6 +70,64 @@ CAMERAS = {
 
 PLATES = {1: "A", 19: "B", 35: "C", 51: "D"}
 
+ANCHORS = {
+    "A": """ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.""",
+
+    "B": """ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.""",
+
+    "CD": """ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.""",
+}
+
+BASE_FIRST = """BASE IMAGE: none. This is the first frame of the series - generate it from scratch."""
+
+BASE_EDIT = """BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below."""
+
+
 REFRAME = (
     "Same world, same buildings, same time of day and same art style as the reference "
     "image — only the camera is repositioned, exactly as described above. Nothing in the "
@@ -127,8 +185,18 @@ def main():
         NEGATIVE,
         "```",
         "",
-        "Кадр 1 генерится с нуля. Кадры 2-75 — правкой предыдущего кадра",
-        "(инструкционное редактирование, не text-to-image).",
+        "## Самое важное",
+        "",
+        "**Кадр 1 генерится с нуля. Кадры 2-75 — только правкой предыдущего кадра.**",
+        "В Gemini это значит: прикрепить картинку предыдущего кадра к запросу и",
+        "вставить блок промпта. Если генерить каждый кадр по одному тексту, без",
+        "приложенной картинки, модель будет каждый раз выдумывать заново и статую,",
+        "и здание — это предел технологии, промптом он не обходится.",
+        "",
+        "В каждом блоке есть раздел ANCHOR OBJECTS с точным описанием повторяющихся",
+        "объектов: колонны со статуей короля, дворца с часовой башней, липы. Он",
+        "нужен, чтобы модель не изобретала новую статую на каждом кадре. Не сокращать.",
+        "",
         "После каждой генерации вернуть фон и якоря композитом из мастер-плиты группы.",
         "",
         "---",
@@ -147,12 +215,14 @@ def main():
         out += [f"> {NOTES[n].replace(chr(10), chr(10) + '> ')}", ""] if n in NOTES \
             else [f"> Вход: кадр {n - 1} + мастер-плита группы {plate}.", ""]
 
-        parts = [STYLE, "", CAMERAS[plate], ""]
-        if n in (19, 51):
-            parts += [REFRAME]
-        else:
-            parts += [f["body"]]
-
+        change = REFRAME if n in (19, 51) else f["body"]
+        parts = [
+            BASE_FIRST if n == 1 else BASE_EDIT, "",
+            "STYLE:", STYLE, "",
+            "CAMERA:", CAMERAS[plate], "",
+            ANCHORS["CD" if plate in ("C", "D") else plate], "",
+            "CHANGE:", change,
+        ]
         out += ["```", *parts, "```", ""]
 
     (base / "image-prompts-warsaw.md").write_text("\n".join(out), encoding="utf-8")

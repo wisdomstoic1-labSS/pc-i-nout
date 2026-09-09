@@ -11,8 +11,18 @@
 smooth surfaces, rounded edges, curved walls, realistic geometry, photorealism, low-poly non-cubic shapes, sculpted terrain, HUD, crosshair, hotbar, inventory, user interface, text, letters, numbers, watermark, signature, logo, blurry, fisheye, distorted perspective, tilted horizon, changed art style
 ```
 
-Кадр 1 генерится с нуля. Кадры 2-75 — правкой предыдущего кадра
-(инструкционное редактирование, не text-to-image).
+## Самое важное
+
+**Кадр 1 генерится с нуля. Кадры 2-75 — только правкой предыдущего кадра.**
+В Gemini это значит: прикрепить картинку предыдущего кадра к запросу и
+вставить блок промпта. Если генерить каждый кадр по одному тексту, без
+приложенной картинки, модель будет каждый раз выдумывать заново и статую,
+и здание — это предел технологии, промптом он не обходится.
+
+В каждом блоке есть раздел ANCHOR OBJECTS с точным описанием повторяющихся
+объектов: колонны со статуей короля, дворца с часовой башней, липы. Он
+нужен, чтобы модель не изобретала новую статую на каждом кадре. Не сокращать.
+
 После каждой генерации вернуть фон и якоря композитом из мастер-плиты группы.
 
 ---
@@ -26,11 +36,27 @@ smooth surfaces, rounded edges, curved walls, realistic geometry, photorealism, 
 > Сгенерить 10-20 вариантов и выбрать вдумчиво, переделать потом = переделать всё.
 
 ```
+BASE IMAGE: none. This is the first frame of the series - generate it from scratch.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 A post-glacial river valley with no humans and no buildings of any kind anywhere in the frame. The escarpment is bare: patches of gravel, sand and grey stone, sparse dwarf pines and thin birches, snow lying in the shaded hollows. The river is wide, pale and braided around gravel islands. Cold thin light, desaturated blue-grey palette, low pale sun.
 ```
 
@@ -39,11 +65,30 @@ A post-glacial river valley with no humans and no buildings of any kind anywhere
 > Вход: кадр 1 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Cover the escarpment and the far hills with dense primeval forest: tall dark oaks and limes in thick blocky canopy, no gaps, no clearings. Plant one huge solitary oak on the crest at the right third — taller and wider than all the others; it must stay in every following image. Still no humans and no buildings. Warm green summer palette.
 ```
 
@@ -52,11 +97,30 @@ Cover the escarpment and the far hills with dense primeval forest: tall dark oak
 > Вход: кадр 2 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Cut a small clearing into the forest at the centre of the crest. Place two low huts with thatched roofs and a small fenced pen. A thin column of smoke rises from one hut. Everything else stays exactly as before.
 ```
 
@@ -65,11 +129,30 @@ Cut a small clearing into the forest at the centre of the crest. Place two low h
 > Вход: кадр 3 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Grow the clearing to about four times its size. Replace the two huts with eight timber houses arranged in a loose ring, surrounded by a low wooden palisade. Add small cultivated fields on the slope below and a footpath down to the river.
 ```
 
@@ -78,11 +161,30 @@ Grow the clearing to about four times its size. Replace the two huts with eight 
 > Вход: кадр 4 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Enlarge the settlement to about twenty houses. Add a beaten trade road running along the crest and out of the right side of the frame, with two loaded ox carts on it. Add a small landing stage with a log boat on the river bank.
 ```
 
@@ -91,11 +193,30 @@ Enlarge the settlement to about twenty houses. Add a beaten trade road running a
 > Вход: кадр 5 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Destroy and abandon the settlement. The houses are burnt shells with collapsed roofs and blackened timbers; grass and saplings grow through the ruins; the palisade is broken and leaning. The fields are gone back to weeds. No people anywhere. Overcast grey light, desaturated palette.
 ```
 
@@ -104,11 +225,30 @@ Destroy and abandon the settlement. The houses are burnt shells with collapsed r
 > Вход: кадр 6 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Clear the ruins away. Build a new settlement of a different character on the same spot: fifteen sunken-floor huts with steep thatched roofs, a communal open space in the middle, a new palisade of split logs. Return warm summer light.
 ```
 
@@ -117,11 +257,30 @@ Clear the ruins away. Build a new settlement of a different character on the sam
 > Вход: кадр 7 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Build a proper stronghold on the crest: a high circular earth-and-timber rampart with a log palisade on top and a gate tower facing the river. The settlement moves inside the rampart. Add a defensive ditch on the landward side.
 ```
 
@@ -130,11 +289,30 @@ Build a proper stronghold on the crest: a high circular earth-and-timber rampart
 > Вход: кадр 8 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Add a small wooden church with a steep roof and a plain cross on the gable, standing just inside the stronghold gate. Add a small fenced graveyard beside it.
 ```
 
@@ -143,11 +321,30 @@ Add a small wooden church with a steep roof and a plain cross on the gable, stan
 > Вход: кадр 9 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Build a long timber bridge on piles across the river, connecting the near bank to a track climbing the escarpment. Add a small suburb of a dozen houses outside the rampart on the slope.
 ```
 
@@ -156,11 +353,30 @@ Build a long timber bridge on piles across the river, connecting the near bank t
 > Вход: кадр 10 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Add a water mill with a large wheel on the near bank at the left, and a small mill pond. Double the size of the suburb outside the rampart. Add more cultivated strips on the slope.
 ```
 
@@ -169,11 +385,30 @@ Add a water mill with a large wheel on the near bank at the left, and a small mi
 > Вход: кадр 11 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Replace the timber stronghold with a ducal seat: a two-storey timber-and-stone hall with a tiled roof inside the rampart, a stone gate tower, and a larger church with a bell turret. The suburb grows to thirty houses.
 ```
 
@@ -182,11 +417,30 @@ Replace the timber stronghold with a ducal seat: a two-storey timber-and-stone h
 > Вход: кадр 12 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 The settlement has been raided and burnt. The ducal hall is a roofless shell, the palisade broken in three places, half the suburb houses reduced to charred frames. Fires still burning in two places, thick black smoke. Bodies of the dead are not shown. Ash on the ground.
 ```
 
@@ -195,11 +449,30 @@ The settlement has been raided and burnt. The ducal hall is a roofless shell, th
 > Вход: кадр 13 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Total ruin. Even the stone gate tower is toppled, the rampart slumped and overgrown, nothing standing but broken walls and blackened stumps. The fires are out, only cold ash and grey light. The solitary oak on the right survives untouched.
 ```
 
@@ -208,11 +481,30 @@ Total ruin. Even the stone gate tower is toppled, the rampart slumped and overgr
 > Вход: кадр 14 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Found a new town on the same crest, slightly to the left of the old ruined rampart, which stays visible as a grassy mound. The new town has a regular rectangular grid of forty timber houses with tiled roofs, a rectangular open market square in the middle, and a fresh timber palisade. Bright summer light.
 ```
 
@@ -221,11 +513,30 @@ Found a new town on the same crest, slightly to the left of the old ruined rampa
 > Вход: кадр 15 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Formalise the town: straight cobbled streets on the grid, a timber town hall in the centre of the market square, a weighhouse, and rows of narrow gabled merchant houses replacing the plain huts.
 ```
 
@@ -234,11 +545,30 @@ Formalise the town: straight cobbled streets on the grid, a timber town hall in 
 > Вход: кадр 16 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Replace the twenty houses around the market square with brick ones — red brick walls, stepped gables, red tile roofs. Begin a large brick church at the north edge of the town: walls half-built, wooden scaffolding, a crane on top.
 ```
 
@@ -247,11 +577,30 @@ Replace the twenty houses around the market square with brick ones — red brick
 > Вход: кадр 17 + мастер-плита группы A.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, wide establishing shot from a slightly elevated position on the flat east bank of a great river. The river runs across the lower third of the frame from the left edge to the right. Beyond it rises a wooded escarpment: a long steep bluff whose crest sits at 45% of frame height. The flattest point of that crest is dead centre of the frame. Low forested hills close the far background. 35mm equivalent field of view, no lens distortion, horizon perfectly level. Midday sun from the upper left, long soft shadows falling to the lower right. 16:9.
 NEVER CHANGE: the bend of the river, the grey boulder on the near bank at the lower left, the solitary oak on the crest at the right third.
 
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+
+CHANGE:
 Replace the timber palisade with a brick defensive wall with square towers and a gate house. Finish the church: tall brick nave and a slender tower with a spire. The town is now unmistakably a medieval brick town.
 ```
 
@@ -264,11 +613,31 @@ Replace the timber palisade with a brick defensive wall with square towers and a
 > как плиту B, и уже от неё вести цепочку дальше.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Same world, same buildings, same time of day and same art style as the reference image — only the camera is repositioned, exactly as described above. Nothing in the world is added, removed or rebuilt in this step.
 ```
 
@@ -277,11 +646,31 @@ Same world, same buildings, same time of day and same art style as the reference
 > Вход: кадр 19 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Enlarge the brick church into a tall Gothic collegiate: steep roof, high narrow windows, flying buttresses made of blocks, a taller spire that now dominates the skyline.
 ```
 
@@ -290,11 +679,31 @@ Enlarge the brick church into a tall Gothic collegiate: steep roof, high narrow 
 > Вход: кадр 20 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Add a second walled town immediately to the left, separated by a strip of open ground: its own smaller market square, its own church with a modest tower, its own gate.
 ```
 
@@ -303,11 +712,31 @@ Add a second walled town immediately to the left, separated by a strip of open g
 > Вход: кадр 21 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Replace the old ducal hall on the crest with a proper brick castle: four-storey main block, a tall square keep, crenellated walls, a courtyard, and a ducal banner on the keep.
 ```
 
@@ -316,11 +745,31 @@ Replace the old ducal hall on the crest with a proper brick castle: four-storey 
 > Вход: кадр 22 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Raise every house in both towns to three storeys with steep tiled roofs and decorated stepped gables. Add a covered cloth hall in the main square.
 ```
 
@@ -329,11 +778,31 @@ Raise every house in both towns to three storeys with steep tiled roofs and deco
 > Вход: кадр 23 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Build a round brick barbican in front of the main gate, connected by a bridge over the moat. Thicken the walls and add three more towers.
 ```
 
@@ -342,11 +811,31 @@ Build a round brick barbican in front of the main gate, connected by a bridge ov
 > Вход: кадр 24 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Replace the ducal banner on the keep with a royal one — a white eagle on red. Add a large stone royal coat of arms above the castle gate. Extend the castle with a new residential wing.
 ```
 
@@ -355,11 +844,31 @@ Replace the ducal banner on the keep with a royal one — a white eagle on red. 
 > Вход: кадр 25 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Renaissance rebuild: replace steep Gothic gables with flat decorative attic parapets, add arcaded loggias on the square, repaint the merchant houses in ochre, red, pale green and blue. Add a stone well in the middle of the market square.
 ```
 
@@ -368,11 +877,31 @@ Renaissance rebuild: replace steep Gothic gables with flat decorative attic para
 > Вход: кадр 26 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Add a long low parliament hall with a colonnaded front beside the castle, and a large paved forecourt in front of it filled with parked carriages and horses.
 ```
 
@@ -381,11 +910,31 @@ Add a long low parliament hall with a colonnaded front beside the castle, and a 
 > Вход: кадр 27 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Add temporary wooden tribunes and rows of tents on the field outside the walls, with dozens of coloured banners of different noble houses.
 ```
 
@@ -394,11 +943,31 @@ Add temporary wooden tribunes and rows of tents on the field outside the walls, 
 > Вход: кадр 28 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Massively expand the castle: a new five-storey Renaissance front with a tall clock tower over the gate, formal gardens on the slope below. Cut down the solitary oak on the right — leave a wide fresh stump where it stood, to make room for the new wing.
 ```
 
@@ -407,11 +976,31 @@ Massively expand the castle: a new five-storey Renaissance front with a tall clo
 > Вход: кадр 29 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Finish the castle in early Baroque: symmetrical wings, a copper roof gone green, ornamental stone portal, guard posts. Pave the whole forecourt with fitted stone.
 ```
 
@@ -420,11 +1009,31 @@ Finish the castle in early Baroque: symmetrical wings, a copper roof gone green,
 > Вход: кадр 30 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Rebuild the merchant houses on the square in Baroque: curved decorative parapets, painted facades in cream, pink and pale blue, stone doorframes, shop signs hanging on iron brackets.
 ```
 
@@ -433,11 +1042,31 @@ Rebuild the merchant houses on the square in Baroque: curved decorative parapets
 > Вход: кадр 31 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Add three Baroque churches with domes and twin towers across the town, and two large noble palaces with courtyards and gated entrances.
 ```
 
@@ -446,11 +1075,31 @@ Add three Baroque churches with domes and twin towers across the town, and two l
 > Вход: кадр 32 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 Erect a tall free-standing stone column in the middle of the castle forecourt, topped with a bronze statue of a crowned king holding a cross and a sabre. This column must appear in every following image.
 ```
 
@@ -459,11 +1108,31 @@ Erect a tall free-standing stone column in the middle of the castle forecourt, t
 > Вход: кадр 33 + мастер-плита группы B.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera on a locked tripod, medium-wide shot from the same direction as before but closer and slightly higher. The escarpment crest fills the middle band of the frame; the river shows only as a strip along the bottom edge. The ducal seat stands at the centre of the crest, the town spreads to the left. Horizon at 35% of frame height. 35mm equivalent, level horizon, midday sun upper left. 16:9.
 NEVER CHANGE: the solitary oak at the right third, the silhouette of the crest line.
 
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a long rectangular palace, 4 storeys, warm terracotta-red
+  brick walls with pale cream stone corner quoins and window frames, a steep green
+  oxidised-copper roof. One square clock tower rises from the centre of the facade
+  with a round clock face and a slim copper-green spire. Two smaller copper-domed
+  turrets, one at each end of the roof. Always this exact building.
+
+CHANGE:
 The city at its peak: every facade freshly painted, gilded details, flower boxes, full market, carriages everywhere, ships at the river landing. Bright warm golden light, richest colours of the whole video.
 ```
 
@@ -477,11 +1146,44 @@ The city at its peak: every facade freshly painted, gilded details, flower boxes
 > иначе пара «до/после» не сработает, зрителю нужно узнать те же здания.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 The same square, the same buildings, the same camera — sacked and burnt. Roofs collapsed, walls broken open, windows empty black holes, rubble across the cobbles, wrecked carts. The residence has lost its roof and one wing. Fires burning in three places, heavy black smoke across the sky. The column still stands, scorched but upright. Ash on everything, desaturated palette, red firelight.
 ```
 
@@ -490,11 +1192,44 @@ The same square, the same buildings, the same camera — sacked and burnt. Roofs
 > Вход: кадр 35 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 The fires are out. Cold grey ruins, ash washed grey by rain, weeds already growing between the cobbles, one leaning wall collapsed into the square. Flat overcast light, almost colourless. Two or three figures only.
 ```
 
@@ -503,11 +1238,44 @@ The fires are out. Cold grey ruins, ash washed grey by rain, weeds already growi
 > Вход: кадр 36 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Rebuilding begins: scaffolding on three houses, fresh timber roof frames, stacks of brick and lime on the cobbles, a crane. Half the square is still ruins. Weak sunlight returning.
 ```
 
@@ -516,11 +1284,44 @@ Rebuilding begins: scaffolding on three houses, fresh timber roof frames, stacks
 > Вход: кадр 37 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 The square is rebuilt in full Baroque: new roofs, cream and ochre facades, stone portals, the residence complete again with a green copper roof. Clean cobbles. Warm light returns.
 ```
 
@@ -529,11 +1330,44 @@ The square is rebuilt in full Baroque: new roofs, cream and ochre facades, stone
 > Вход: кадр 38 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Heavier Baroque: add sculpted stone figures on the parapets, ornate iron lanterns on brackets, a decorative fountain at the left of the square. Guards in tall mitre caps at the residence gate.
 ```
 
@@ -542,11 +1376,44 @@ Heavier Baroque: add sculpted stone figures on the parapets, ornate iron lantern
 > Вход: кадр 39 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Plant a young lime tree in a small stone surround at the right edge of the square. It must appear in every following image and grow steadily. Add formal clipped hedges along the residence wall.
 ```
 
@@ -555,11 +1422,44 @@ Plant a young lime tree in a small stone surround at the right edge of the squar
 > Вход: кадр 40 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Add tall glazed shop windows at street level, painted signboards, a bookshop and a coffee house with tables on the cobbles. Street lamps on posts. The lime tree is now twice as tall.
 ```
 
@@ -568,11 +1468,44 @@ Add tall glazed shop windows at street level, painted signboards, a bookshop and
 > Вход: кадр 41 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Reface the residence in neoclassical style: flat pilasters, a triangular pediment over the centre, restrained cream and white. Straighten and repave the square in a radial cobble pattern around the column.
 ```
 
@@ -581,11 +1514,44 @@ Reface the residence in neoclassical style: flat pilasters, a triangular pedimen
 > Вход: кадр 42 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 A celebration: the square packed with people, garlands and flags strung between the buildings, decorative arches, banners on every facade. Bright festive light.
 ```
 
@@ -594,11 +1560,44 @@ A celebration: the square packed with people, garlands and flags strung between 
 > Вход: кадр 43 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Fighting in the square: overturned carts and paving stones built into barricades, smoke, broken windows, scattered debris, a torn flag on the barricade. Grim overcast light.
 ```
 
@@ -607,11 +1606,44 @@ Fighting in the square: overturned carts and paving stones built into barricades
 > Вход: кадр 44 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Clear the barricades. Foreign soldiers in dark blue coats stand in formation across the square, a foreign eagle standard replaces the flags on the residence. Repaired but joyless facades, few civilians. Cold grey palette.
 ```
 
@@ -620,11 +1652,44 @@ Clear the barricades. Foreign soldiers in dark blue coats stand in formation acr
 > Вход: кадр 45 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Different foreign troops now: soldiers in blue and white with tall shakos, tricolour flags on the residence. Add a triumphal wooden arch at the left entrance to the square. Warmer light, more civilians back on the street.
 ```
 
@@ -633,11 +1698,44 @@ Different foreign troops now: soldiers in blue and white with tall shakos, trico
 > Вход: кадр 46 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Another change of flags — a double-headed eagle standard on the residence. Add gas-free oil street lanterns on iron posts, a sentry box, and neat railings around the column base. Ordered, quiet, bureaucratic feel.
 ```
 
@@ -646,11 +1744,44 @@ Another change of flags — a double-headed eagle standard on the residence. Add
 > Вход: кадр 47 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 The square after the fighting: shell-pocked facades, one house roofless, broken lanterns, rubble against the residence wall, artillery pieces standing on the cobbles. Grey smoke, no celebration. The column stands undamaged.
 ```
 
@@ -659,11 +1790,44 @@ The square after the fighting: shell-pocked facades, one house roofless, broken 
 > Вход: кадр 48 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Industrial era arrives: repair everything, add a horse-drawn tram on rails crossing the square, telegraph poles with wires, large commercial shop windows, painted advertising on gable walls, gas street lamps.
 ```
 
@@ -672,11 +1836,44 @@ Industrial era arrives: repair everything, add a horse-drawn tram on rails cross
 > Вход: кадр 49 + мастер-плита группы C.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level in the middle of an open cobbled city square. A tall free-standing column with a statue on top stands at the centre-left of the frame. The bulk of the royal residence closes the right half. A gate and the rooflines of the old town close the left. Sky occupies the top third. Horizon at 55% of frame height. 35mm equivalent, level horizon, sun upper left. 16:9.
 NEVER CHANGE: the column, the corner tower of the residence, the cobble pattern of the square, the lime tree at the right edge of the square.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Raise the buildings on the left to five-storey tenements with iron balconies and elaborate stucco. Add awnings over the shopfronts, a newspaper kiosk, a flower stall at the column base. The lime tree is now full-grown.
 ```
 
@@ -688,11 +1885,44 @@ Raise the buildings on the left to five-storey tenements with iron balconies and
 > Сначала только переставить камеру, результат сохранить как плиту D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Same world, same buildings, same time of day and same art style as the reference image — only the camera is repositioned, exactly as described above. Nothing in the world is added, removed or rebuilt in this step.
 ```
 
@@ -701,11 +1931,44 @@ Same world, same buildings, same time of day and same art style as the reference
 > Вход: кадр 51 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Replace horse trams with an electric tram: overhead wires and catenary poles across the square, a red-and-cream tram car with a pantograph. Add the first electric street lights.
 ```
 
@@ -714,11 +1977,44 @@ Replace horse trams with an electric tram: overhead wires and catenary poles acr
 > Вход: кадр 52 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Mobilisation: recruitment posters pasted over the advertising, soldiers in grey with packs forming up, sandbags at the residence entrance, no civilian carriages. Cooler, drained palette.
 ```
 
@@ -727,11 +2023,44 @@ Mobilisation: recruitment posters pasted over the advertising, soldiers in grey 
 > Вход: кадр 53 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Occupation: foreign signage in a different alphabet over the shops, a checkpoint with a striped barrier at the left, few civilians, shuttered shops, ration queue along the residence wall. Bleak light.
 ```
 
@@ -740,11 +2069,44 @@ Occupation: foreign signage in a different alphabet over the shops, a checkpoint
 > Вход: кадр 54 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Liberation: white-and-red flags on every single facade and on the residence, a huge crowd filling the square, banners, garlands. Bright breaking sunlight through the clouds.
 ```
 
@@ -753,11 +2115,44 @@ Liberation: white-and-red flags on every single facade and on the residence, a h
 > Вход: кадр 55 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Wartime again but defiant: sandbag emplacements, a field gun, military trucks, soldiers and volunteers including civilians with rifles, a field hospital tent with a red cross at the left. Smoke on the horizon beyond the roofs.
 ```
 
@@ -766,11 +2161,44 @@ Wartime again but defiant: sandbag emplacements, a field gun, military trucks, s
 > Вход: кадр 56 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Peacetime: clear all military presence, restore shopfronts, add early automobiles and a bus, new neon-lit signs, repaired facades, a newspaper vendor at the column.
 ```
 
@@ -779,11 +2207,44 @@ Peacetime: clear all military presence, restore shopfronts, add early automobile
 > Вход: кадр 57 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Add a tall modernist skyscraper of pale stone and glass rising behind the rooflines at the left — clearly the tallest thing in the city. Replace two facades with clean functionalist fronts. More cars, brighter neon.
 ```
 
@@ -792,11 +2253,44 @@ Add a tall modernist skyscraper of pale stone and glass rising behind the roofli
 > Вход: кадр 58 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 The city at its interwar best: everything clean and bright, full traffic, crowded pavements, glowing neon, flower stalls, awnings, the lime tree in full leaf. Warm golden late-afternoon light, rich saturated colour. Study this frame carefully — the next six frames destroy exactly these buildings.
 ```
 
@@ -805,11 +2299,44 @@ The city at its interwar best: everything clean and bright, full traffic, crowde
 > Вход: кадр 59 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 The same square under bombardment. Three buildings on the left are burning shells, the residence has lost its roof and the clock tower is broken off, craters in the cobbles, a wrecked tram on its side, fallen wires. Fires and heavy black smoke. The column still stands. Firelight and dust, desaturated except the flames.
 ```
 
@@ -818,11 +2345,44 @@ The same square under bombardment. Three buildings on the left are burning shell
 > Вход: кадр 60 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Occupied city: makeshift repairs with boarded windows, foreign flags on the residence, checkpoints with barriers, patrolling soldiers, occupation notices pasted on walls. Add a high brick wall topped with wire closing the left side of the square. Grey, drained palette.
 ```
 
@@ -831,11 +2391,44 @@ Occupied city: makeshift repairs with boarded windows, foreign flags on the resi
 > Вход: кадр 61 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Beyond the brick wall on the left, the entire district is flattened to an empty grey field of rubble stretching to the horizon — no standing buildings at all on that side. Smoke rising from it. The right side of the square still stands, boarded and grey.
 ```
 
@@ -844,11 +2437,44 @@ Beyond the brick wall on the left, the entire district is flattened to an empty 
 > Вход: кадр 62 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Street fighting: barricades of paving stones, overturned trams and furniture across the square, a white-and-red armband flag raised on the barricade, smoke everywhere, burning buildings, insurgents behind cover. The column is toppled — it lies broken across the cobbles, the statue face down.
 ```
 
@@ -857,11 +2483,44 @@ Street fighting: barricades of paving stones, overturned trams and furniture acr
 > Вход: кадр 63 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Total destruction. Not one intact building anywhere in frame. The residence is a jagged stump of wall. Every facade is a hollow shell or a mound of rubble. The square is buried under broken brick. The broken column lies where it fell. The lime tree is a blackened stump. Snow over the ruins, flat colourless winter light, no fires left, absolute silence.
 ```
 
@@ -870,11 +2529,44 @@ Total destruction. Not one intact building anywhere in frame. The residence is a
 > Вход: кадр 64 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Rubble clearing: long human chains of civilians passing bricks hand to hand, sorted stacks of salvaged brick, narrow cleared paths through the debris, hand carts, a few tents. Still ruins, but organised. Weak spring light.
 ```
 
@@ -883,11 +2575,44 @@ Rubble clearing: long human chains of civilians passing bricks hand to hand, sor
 > Вход: кадр 65 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 The square rebuilt exactly as it looked in 1938 — same facades, same colours, same rooflines, but visibly brand new: crisp unweathered paint, fresh cobbles, new window frames. Scaffolding still on two buildings. The column is re-erected, repaired, standing again. Clear bright light.
 ```
 
@@ -896,11 +2621,44 @@ The square rebuilt exactly as it looked in 1938 — same facades, same colours, 
 > Вход: кадр 66 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Add an enormous tiered stone tower with a spire rising far behind the rooflines at the right — monumental, far taller than anything else, dominating the whole skyline. Add period buses and a large propaganda banner across one facade.
 ```
 
@@ -909,11 +2667,44 @@ Add an enormous tiered stone tower with a spire rising far behind the rooflines 
 > Вход: кадр 67 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Add three plain concrete slab blocks behind the left rooflines, replace the old lamps with plain modern ones, add small boxy cars and a modern trolleybus, and plain state shop signage. The lime tree has regrown from its stump into a young tree again.
 ```
 
@@ -922,11 +2713,44 @@ Add three plain concrete slab blocks behind the left rooflines, replace the old 
 > Вход: кадр 68 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 A crowd rally in the square: hand-painted banners, a makeshift platform, thousands of people, no police visible. Damp cold light, drab clothing, but a dense determined crowd.
 ```
 
@@ -935,11 +2759,44 @@ A crowd rally in the square: hand-painted banners, a makeshift platform, thousan
 > Вход: кадр 69 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 The first commercial signs appear over the plain state shops, a few Western cars among the boxy ones, market stalls with imported goods set up along the square, brighter clothing in the crowd.
 ```
 
@@ -948,11 +2805,44 @@ The first commercial signs appear over the plain state shops, a few Western cars
 > Вход: кадр 70 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Add two glass office towers rising behind the skyline at the left, replace the shopfronts with modern glazed ones and international brand signage, add modern street furniture, contemporary cars and a modern low-floor tram.
 ```
 
@@ -961,11 +2851,44 @@ Add two glass office towers rising behind the skyline at the left, replace the s
 > Вход: кадр 71 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Fill the background with a dense cluster of tall glass skyscrapers of varied heights. Add glass entrance pavilions for an underground station in the square, cycle lanes, planters and modern benches.
 ```
 
@@ -974,11 +2897,44 @@ Fill the background with a dense cluster of tall glass skyscrapers of varied hei
 > Вход: кадр 72 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Add one very tall slender tower clearly rising above all others at the back. Add outdoor café seating across the square, tourists with phones, food trucks, and the fully grown lime tree with a wide canopy. Warm bright day, the square fully pedestrianised.
 ```
 
@@ -987,11 +2943,44 @@ Add one very tall slender tower clearly rising above all others at the back. Add
 > Вход: кадр 73 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Near future: the towers are clad in vertical gardens and solar glass, the square has mature trees and water channels through the cobbles, silent driverless pods glide on a marked lane, drones move overhead, holographic information panels stand at the corners. The column and the lime tree are untouched and protected by a low rail. Clean bright optimistic light.
 ```
 
@@ -1000,10 +2989,43 @@ Near future: the towers are clad in vertical gardens and solar glass, the square
 > Вход: кадр 74 + мастер-плита группы D.
 
 ```
+BASE IMAGE: the previous frame is attached. Build this image by EDITING that
+image, not by drawing a new scene from scratch. Keep its camera position, framing,
+horizon line, perspective, lighting and every anchor object exactly as they already
+are. Change only what is listed under CHANGE below.
+
+STYLE:
 Minecraft-style voxel world. Every object is built from uniform 1-meter cubic blocks with 16x16 pixel-art textures. Hard-edged blocky geometry, visible grid seams on every face. No smooth curves, no rounded shapes, no organic silhouettes, no bevels, no sculpted detail. Rendered as a game screenshot through a modern shader pack: volumetric god rays, soft contact shadows, gentle bloom, crisp saturated colours, smooth sky gradient, light atmospheric haze on the far background. No HUD, no crosshair, no hotbar, no interface, no hands, no held items, no text, no watermark, no signature.
 
+CAMERA:
 Fixed camera at standing eye level, facing the royal residence head-on across the cobbled square. The facade and its clock tower fill the right two-thirds; the column stands at the left third with its statue against open sky. Horizon at 60% of frame height. 35mm equivalent, level horizon. 16:9.
 NEVER CHANGE: the column, the clock tower, the cobble pattern, the lime tree at the right edge.
 
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE: one tall round-shafted stone column of smooth grey-brown
+  stone, standing on a square two-step stone plinth. On top stands ONE bronze statue
+  of a crowned king: dark weathered green-bronze, in armour and a long cloak, holding
+  a tall thin cross upright in his RIGHT hand and a curved sabre pointing downward in
+  his LEFT hand. It is ALWAYS this same statue - same crown, same cross in the right
+  hand, same sabre in the left, same green-bronze colour, same proportions, same
+  height. NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a
+  soldier, a horse, or any other figure.
+- THE PALACE: a long rectangular palace, 4 storeys, warm terracotta-red brick walls
+  with pale cream stone corner quoins and window frames, a steep green oxidised-copper
+  roof. One square clock tower rises from the centre of the facade, with a round clock
+  face on its front and a slim copper-green spire topped by a golden ball. Two smaller
+  copper-domed turrets, one at each end of the roof. Always this exact building in
+  this exact place.
+- THE LIME TREE: one broad-crowned lime tree at the right edge of the square, in a
+  small square stone surround. Always the same tree in the same spot.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS object in a
+damaged state: the same statue lying broken on the ground, the same palace burnt out,
+the same tree reduced to a charred stump. Never swap it for a different design.
+
+CHANGE:
 Far future, and it has gone wrong: the green towers are dark and broken, vegetation overgrowing the square and pushing up through the cobbles, dead holographic panels flickering, a wrecked pod on its side, low mist, rain. The column still stands, weathered and leaning slightly. The lime tree is enormous, wilder than ever, roots cracking the stones. Dark blue-grey palette with cold neon glow from one dying sign.
 ```
