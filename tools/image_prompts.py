@@ -113,15 +113,18 @@ Never redesign them, never move them, never change their size or shape:
     "CD": """ANCHOR OBJECTS - these are the SAME physical objects in every single image.
 Never redesign them, never invent a different version of them:
 - THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
-  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a stepped
-  square plinth of stone bricks 6 blocks wide. On top stands a crude blocky figure
-  assembled from oxidised copper blocks, about 8 blocks tall: the body is a 2x1
-  column of blocks, each arm is a single 1x1 column of blocks, the head is one block
-  with a small crown of copper stairs on it. The RIGHT arm holds a cross made of five
-  blocks in a plus shape. The LEFT arm holds a sabre made of three blocks stepped
-  diagonally. It reads as a king only from a distance, exactly the way a player-built
-  Minecraft statue does. NO face, NO armour detail, NO cloth folds, NO smooth curves,
-  NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a wide stepped
+  stone-brick plinth of 4 tiers. On top stands a figure built from oxidised copper
+  blocks, 10 blocks tall, which must READ CLEARLY AS A CROWNED KING even though it is
+  built from cubes. Silhouette from top to bottom: a crown of 4 copper stairs facing
+  outward; below it ONE block for the head; below that shoulders 3 blocks wide; a body
+  2 blocks wide and 4 blocks tall widening to 4 blocks at the base like a stiff robe.
+  THE TWO ARMS ARE NOT SYMMETRICAL: the RIGHT arm is RAISED as a 1x1 column of 3
+  blocks with a cross of five blocks in a plus shape above it; the LEFT arm HANGS DOWN
+  along the body as a 1x1 column of 3 blocks with a sabre of three blocks stepping
+  diagonally away from it. One arm up with a cross, one arm down with a sabre - never
+  both arms in the same pose. NO face, NO armour detail, NO cloth folds, NO smooth
+  curves, NO sculpted anatomy. It is ALWAYS this same build - same crown, same block cross in
   the right hand, same block sabre in the left, same copper colour, same height.
   NEVER replace it with an angel, an eagle, an orb, a globe, a woman, a soldier, a
   horse, or any other figure.
