@@ -68,12 +68,17 @@ def pick_font():
     raise SystemExit("не найден ни один рабочий шрифт из списка FONTS")
 
 
-def half(img_path, box_w, box_h):
-    """Вписывает картинку в половину кадра по центру, без искажения пропорций."""
+def half(img_path, box_w, box_h, anchor=0.5):
+    """Вписывает картинку в половину кадра, без искажения пропорций.
+
+    anchor — куда сдвинуть окно обрезки по горизонтали: 0 левый край,
+    0.5 центр, 1 правый. Нужен, когда важный объект стоит не по центру
+    исходника и при центральной обрезке вылетает из кадра.
+    """
     im = Image.open(img_path).convert("RGB")
     scale = max(box_w / im.width, box_h / im.height)
     im = im.resize((round(im.width * scale), round(im.height * scale)), Image.LANCZOS)
-    left = (im.width - box_w) // 2
+    left = round((im.width - box_w) * min(max(anchor, 0.0), 1.0))
     top = (im.height - box_h) // 2
     return im.crop((left, top, left + box_w, top + box_h))
 
@@ -125,13 +130,17 @@ def main():
     ap.add_argument("--flag", default="pl", choices=sorted(FLAGS))
     ap.add_argument("--flag-corner", default="tr", choices=["tl", "tr"])
     ap.add_argument("--no-flag", action="store_true")
+    ap.add_argument("--anchor-left", type=float, default=0.5,
+                    help="точка обрезки левой половины: 0 левый край, 0.5 центр, 1 правый")
+    ap.add_argument("--anchor-right", type=float, default=0.5,
+                    help="то же для правой половины")
     ap.add_argument("--font", default=None)
     a = ap.parse_args()
 
     hw = W // 2
     canvas = Image.new("RGBA", (W, H))
-    canvas.paste(half(a.left, hw, H), (0, 0))
-    canvas.paste(half(a.right, W - hw, H), (hw, 0))
+    canvas.paste(half(a.left, hw, H, a.anchor_left), (0, 0))
+    canvas.paste(half(a.right, W - hw, H, a.anchor_right), (hw, 0))
 
     d = ImageDraw.Draw(canvas)
     d.rectangle([hw - DIVIDER // 2, 0, hw + DIVIDER // 2, H], fill=(255, 255, 255))
