@@ -6,6 +6,7 @@
 поправил инструкцию там, перезапустил скрипт.
 """
 
+import argparse
 import re
 import sys
 from pathlib import Path
@@ -192,8 +193,16 @@ def parse(src):
 
 
 def main():
-    base = Path(__file__).resolve().parent.parent / "analysis" / "through-the-years-minecraft"
-    frames = parse(base / "prompts-warsaw.md")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("source", nargs="?",
+                    default="analysis/through-the-years-minecraft/prompts-warsaw.md",
+                    help="файл-источник со сценарием кадров")
+    ap.add_argument("out", nargs="?", default=None,
+                    help="куда писать результат; по умолчанию рядом с источником")
+    a = ap.parse_args()
+    src = Path(a.source).resolve()
+    base = src.parent
+    frames = parse(src)
 
     if len(frames) != 75:
         sys.exit(f"ожидалось 75 кадров, разобрано {len(frames)} — проверь разметку источника")
@@ -252,7 +261,7 @@ def main():
         ]
         out += ["```", *parts, "```", ""]
 
-    (base / "image-prompts-warsaw.md").write_text("\n".join(out), encoding="utf-8")
+    Path(a.out or base / src.name.replace("prompts", "image-prompts")).write_text("\n".join(out), encoding="utf-8")
     print(f"собрано блоков: {len(frames)}")
 
 
