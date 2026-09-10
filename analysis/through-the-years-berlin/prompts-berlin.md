@@ -429,11 +429,11 @@ genuinely empty - flat ground with nothing standing on it.
 **MOTION:** `Visitors on the museum steps. Reflections in the granite bowl. Carriages. Crowd crossing the parade ground.`
 
 ### 42 · 1848 · Revolution
-**EDIT:** `Fighting on the square: barricades of overturned carts, paving stones and furniture, black-red-gold flags on the barricades, broken windows, smoke drifting, scattered debris, troops facing the barricades from the palace side. Grim overcast light.`
+**EDIT:** `The morning after street fighting. Abandoned barricades of overturned carts, stacked paving stones and furniture stand across the square, with black-red-gold flags planted on top of them. Broken windows, thin smoke still drifting, scattered debris and torn posters on the walls. Nobody is fighting and no soldiers are present; a few figures stand quietly among the barricades. Grim overcast light.`
 **MOTION:** `Smoke drifts across the square. Flags whip hard on the barricades. Figures move low behind cover. Debris blows.`
 
 ### 43 · 1853 · The Dome
-**EDIT:** `Clear the barricades and repair the square. Add a tall stepped copper dome with a lantern on top over the palace's grand portal — it changes the palace silhouette completely and must appear in every following image.`
+**EDIT:** `The square is clear and fully repaired: fresh paving with no debris anywhere, new glass in every window, the museum and palace facades clean and freshly painted. Add a tall stepped copper dome built from copper stairs and slabs, with a small lantern on top, rising directly above the palace's grand portal — it changes the palace silhouette completely and must appear in every following image. Carriages crossing the square, guards at the portal, a calm crowd strolling on the parade ground. Clear bright daylight.`
 **MOTION:** `Carriages circling the square. Guards at the portal. Pigeons around the new dome. Crowd on the parade ground.`
 
 ### 44 · 1871 · The Empire
