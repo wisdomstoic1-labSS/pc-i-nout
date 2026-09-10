@@ -143,6 +143,99 @@ objects appearing or disappearing, style change, text, watermark
 
 ---
 
+## БЛОКИ ЯКОРЕЙ
+
+### ANCHORS A
+```
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER FORK: the two arms of the river dividing around the long low island in
+  the middle distance. The outline of the island and the shape of the fork stay
+  exactly the same in every image.
+- THE BOULDER: one large grey glacial boulder, about 2 blocks wide, on the near bank
+  at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the island's north tip at the right third, far
+  taller and wider than any other tree. Always the same tree in the same place.
+```
+
+### ANCHORS B
+```
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak on the island's north tip at the right third, far
+  larger than any other tree. Same tree, same place, until the year it is explicitly
+  felled.
+- THE ISLAND: the outline of the island and the fork of the river around it keep
+  exactly the same shape in every image.
+- THE CASTLE, once it exists: a rectangular block standing on the south end of the
+  island, built of red brick blocks with smooth quartz or sandstone corner columns,
+  regular rows of identical 1x2 glass-pane windows, and a stepped roofline. It grows
+  and is refaced over the years, but it always stands on the same footprint.
+```
+
+### ANCHORS CD
+```
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+
+- THE PLOT. This is the true subject of the whole video: the rectangular piece of
+  ground filling the centre and right of the frame. Over the series it holds a
+  baroque palace, then a burnt shell, then nothing at all, then a low modernist
+  block, then nothing again, then the rebuilt palace. Whatever stands on it, the
+  footprint, the position and the boundary of that plot NEVER change.
+
+- THE PALACE, whenever it stands on the plot: a long rectangular building 48 blocks
+  long and 12 blocks tall to the cornice, built of pale sandstone and smooth quartz
+  blocks, with three regular rows of identical 1x2 glass-pane windows, a flat
+  roofline with a stepped parapet, and a grand portal 3 blocks wide at its centre.
+  From the year the dome is added, a tall stepped copper dome of stairs and slabs
+  with a small lantern on top rises directly above that portal.
+
+- THE CATHEDRAL, from the year it is built onward: a massive stone block at the LEFT
+  third of the frame with a huge oxidised-copper dome built from copper stairs and
+  slabs in clearly visible steps, sitting on a square drum, with four smaller stepped
+  copper domes at its corners and a wide flight of stairs down to the garden. It
+  survives every erasure on the plot and must appear in every following image.
+
+- THE BALUSTRADE: a low stone-brick wall along the river edge on the left side of
+  the square, in the same place in every image.
+
+- THE LIME TREE: one Minecraft tree at the left edge of the garden in a small stone
+  surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary.
+
+- THE PAVING: the square is paved in pale smooth stone blocks in a regular grid.
+
+There is NO free-standing column and NO statue on a column anywhere in this series.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS build in a
+damaged state: the same palace burnt out with its blocks missing, the same cathedral
+dome pierced, the same tree reduced to a charred stump. Never swap it for a different
+design, and never make the ruins smooth or sculpted. When the plot is empty, it is
+genuinely empty - flat ground with nothing standing on it.
+```
+
+#### NOTE 1
+Вход: ничего. Единственный кадр, который генерится с нуля (text-to-image).
+Это мастер-плита группы A — от неё зависят все 74 остальных кадра.
+Сгенерить 10-20 вариантов и выбрать вдумчиво, переделать потом = переделать всё.
+
+#### NOTE 19
+Вход: кадр 18. СМЕНА РАКУРСА — мастер-плита группы B.
+Сначала только переставить камеру (мир не трогать), результат сохранить
+как плиту B, и уже от неё вести цепочку дальше.
+
+#### NOTE 35
+Вход: кадр 34. СМЕНА РАКУРСА — мастер-плита группы C.
+Сначала только опустить камеру на уровень площади, мир не трогать,
+результат сохранить как плиту C.
+
+#### NOTE 51
+Вход: кадр 50. СМЕНА РАКУРСА — мастер-плита группы D.
+Сначала только переставить камеру так, чтобы собор встал в левой трети,
+результат сохранить как плиту D. Дальше именно с этой точки происходят
+все три стирания — рамку до конца ролика не менять.
+
+
 ## ЯКОРНЫЕ ОБЪЕКТЫ
 
 | Якорь | Живёт | Судьба |

@@ -11,21 +11,15 @@ import re
 import sys
 from pathlib import Path
 
-LOCK = (
-    "Static locked-off camera on a tripod. Absolutely no camera movement: no zoom, no "
-    "pan, no tilt, no dolly, no truck, no orbit, no parallax, no handheld shake, no "
-    "rack focus. The framing is identical in the first and the last frame. All "
-    "architecture, terrain and the skyline hold their exact shape — nothing morphs, "
-    "melts, grows, or disappears. Motion is slow, subtle and ambient only."
-)
-
-NEGATIVE = (
-    "camera movement, camera pan, camera zoom, dolly, orbit, parallax, shaking, "
-    "morphing buildings, changing architecture, warping geometry, melting structures, "
-    "objects appearing or disappearing, style change, text, watermark"
-)
-
 PLATES = {1: "A", 19: "B", 35: "C", 51: "D"}
+def block_after(text, heading, what):
+    """Содержимое первого ``` блока после заголовка."""
+    m = re.search(heading + r".*?\n```\n(.*?)\n```", text, re.S | re.M)
+    if not m:
+        sys.exit(f"в источнике не найден блок: {what}")
+    return m[1].strip()
+
+
 HEAD = re.compile(r"^### (\d+) · (.+?) · (.+?)(?: — .*)?$")
 MOTION = re.compile(r"^\*\*MOTION:\*\* `(.+)`$")
 
@@ -51,6 +45,10 @@ def main():
     a = ap.parse_args()
     src = Path(a.source).resolve()
     base = src.parent
+    text = src.read_text(encoding="utf-8")
+    lock = block_after(text, r"^## MOTION LOCK", "MOTION LOCK")
+    negative = block_after(text, r"^\*\*NEGATIVE:\*\*(?![\s\S]{0,40}smooth surfaces)",
+                           "MOTION NEGATIVE")
     frames = parse(src)
 
     if len(frames) != 75:
@@ -59,7 +57,7 @@ def main():
     out = [
         "# Промпты оживления — 75 готовых блоков",
         "",
-        "Сгенерировано `tools/motion_prompts.py` из `prompts-warsaw.md`.",
+        f"Сгенерировано `tools/motion_prompts.py` из `{src.name}`.",
         "",
         "Каждый блок ниже — **целый промпт**, включая MOTION LOCK. Собирать ничего не нужно:",
         "берёшь картинку кадра, вставляешь блок в image-to-video, генеришь.",
@@ -67,7 +65,7 @@ def main():
         "**Негатив у всех 75 кадров одинаковый**, вбить один раз и не менять:",
         "",
         "```",
-        NEGATIVE,
+        negative,
         "```",
         "",
         "Длительность клипа — **8 секунд** (кадр 1 — 4 секунды).",
@@ -89,7 +87,7 @@ def main():
             f"### Кадр {f['n']} · {f['year']} · {f['title']} — {dur}",
             "",
             "```",
-            LOCK,
+            lock,
             "",
             f["motion"],
             "```",

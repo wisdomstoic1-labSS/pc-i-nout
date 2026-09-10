@@ -115,6 +115,95 @@ objects appearing or disappearing, style change, text, watermark
 
 ---
 
+## БЛОКИ ЯКОРЕЙ
+
+### ANCHORS A
+```
+ANCHOR OBJECTS - the same physical objects in every image of this group.
+Never redesign them, never move them, never change their size or shape:
+- THE RIVER: a wide river crossing the lower third of the frame from the left edge
+  to the right, with one distinctive bend curving toward the viewer. The bend keeps
+  exactly the same shape in every image.
+- THE BOULDER: one large grey rounded boulder, about 2 blocks wide, lying on the
+  near bank at the lower left. Always in the same spot, never moved, never removed.
+- THE OAK: one huge solitary oak on the crest at the right third, far taller and
+  wider than any other tree, thick dark trunk, broad rounded canopy. Always the
+  same tree in the same place.
+```
+
+### ANCHORS B
+```
+ANCHOR OBJECTS - the same physical objects in every image. Never redesign them:
+- THE OAK: one huge solitary oak at the right third, thick dark trunk, broad rounded
+  canopy, far larger than any other tree. Same tree, same place, until the year it
+  is explicitly cut down.
+- THE CREST LINE: the silhouette of the escarpment edge keeps exactly the same
+  profile in every image.
+- THE PALACE, once it exists: a rectangular building 40 blocks long and 10 blocks
+  tall to the eaves, walls of red terracotta and brick blocks with smooth quartz
+  corner columns, identical 1x2 glass-pane windows, a roof of oxidised copper blocks
+  and copper stairs in a stepped gable. One square clock tower 8 blocks wide rises
+  12 blocks above the roof with a flat square clock face and a stepped copper spire,
+  and two smaller stepped copper turrets sit at the roof ends.
+```
+
+### ANCHORS CD
+```
+ANCHOR OBJECTS - these are the SAME physical objects in every single image.
+Never redesign them, never invent a different version of them:
+- THE COLUMN AND ITS STATUE, and it must look BUILT out of blocks, never sculpted:
+  the column is a 2x2 shaft of smooth stone blocks, 16 blocks tall, on a wide stepped
+  stone-brick plinth of 4 tiers. On top stands a figure built from oxidised copper
+  blocks, 10 blocks tall, which must READ CLEARLY AS A CROWNED KING even though it is
+  built from cubes. Silhouette from top to bottom: a crown of 4 copper stairs facing
+  outward; below it ONE block for the head; below that shoulders 3 blocks wide; a body
+  2 blocks wide and 4 blocks tall widening to 4 blocks at the base like a stiff robe.
+  THE TWO ARMS ARE NOT SYMMETRICAL: the RIGHT arm is RAISED as a 1x1 column of 3
+  blocks with a cross of five blocks in a plus shape above it; the LEFT arm HANGS DOWN
+  along the body as a 1x1 column of 3 blocks with a sabre of three blocks stepping
+  diagonally away from it. One arm up with a cross, one arm down with a sabre - never
+  both arms in the same pose. NO face, NO armour detail, NO cloth folds, NO smooth
+  curves, NO sculpted anatomy. NEVER an angel, an eagle, an orb, a globe, a woman,
+  a soldier or a horse.
+- THE PALACE: a rectangular building 40 blocks long and 12 blocks tall to the eaves,
+  red terracotta and brick walls with smooth quartz corner columns, regular rows of
+  identical 1x2 glass-pane windows. Roof of oxidised copper blocks and copper stairs
+  in a stepped gable. A square clock tower 8 blocks wide rises 14 blocks above the
+  roof with a flat square clock face and a stepped copper spire. Two smaller stepped
+  copper turrets, one at each end of the roof.
+- THE LIME TREE: one Minecraft tree at the right edge of the square in a small square
+  stone surround - a straight 1x1 trunk of oak logs with a blocky cloud of cubic leaf
+  blocks above it. Never a smooth rounded topiary.
+- THE COBBLES: the square is paved in grey cobblestone in a radial pattern around the
+  column. Same paving in every image.
+
+When an anchor is damaged or destroyed in a given year, it is still THIS build in a
+damaged state: the same block statue lying broken with its blocks scattered, the same
+palace burnt out, the same tree reduced to a charred stump. Never swap it for a
+different design, and never make the ruins smooth or sculpted.
+```
+
+#### NOTE 1
+Вход: ничего. Единственный кадр, который генерится с нуля (text-to-image).
+Это мастер-плита группы A — от неё зависят все 74 остальных кадра.
+Сгенерить 10-20 вариантов и выбрать вдумчиво, переделать потом = переделать всё.
+
+#### NOTE 19
+Вход: кадр 18. СМЕНА РАКУРСА — мастер-плита группы B.
+Сначала только переставить камеру (мир не трогать), результат сохранить
+как плиту B, и уже от неё вести цепочку дальше.
+
+#### NOTE 35
+Вход: кадр 34. СМЕНА РАКУРСА — мастер-плита группы C.
+ВАЖНО: сначала отдельным шагом сгенерить МИРНЫЙ кадр 1650 года по камере C
+и сохранить его как плиту C. И уже этот мирный кадр разрушать промптом ниже —
+иначе пара «до/после» не сработает, зрителю нужно узнать те же здания.
+
+#### NOTE 51
+Вход: кадр 50. СМЕНА РАКУРСА — мастер-плита группы D.
+Сначала только переставить камеру, результат сохранить как плиту D.
+
+
 ## ЯКОРНЫЕ ОБЪЕКТЫ
 
 Пять объектов, которые зритель будет отслеживать через весь ролик. Именно они дали лучшие комментарии у референса.
