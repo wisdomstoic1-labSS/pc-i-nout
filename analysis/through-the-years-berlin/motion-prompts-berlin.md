@@ -660,7 +660,7 @@ rack focus. The framing is identical in the first and the last frame. All
 architecture, terrain and the skyline hold their exact shape — nothing morphs,
 melts, grows, or disappears. Motion is slow, subtle and ambient only.
 
-The torch column marches in step. Huge banners ripple heavily. Torch flames flicker. Crowd static and dense.
+The three banners hang almost still and lift slightly in a light wind. The two uniformed men walk slowly across the paving. A tram passes. A few pedestrians cross without stopping. Paper sheets flutter on the noticeboards. Grey clouds move slowly. A quiet, emptied-out frame.
 ```
 
 ### Кадр 54 · 1936 · The Games — 8 секунд

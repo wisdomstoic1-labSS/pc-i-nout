@@ -479,8 +479,8 @@ genuinely empty - flat ground with nothing standing on it.
 **MOTION:** `Traffic flows around the signal tower. Neon flickers on. Dense pedestrian crowd. Flower stall vendor moves.`
 
 ### 53 · 1933 · The Banners
-**EDIT:** `The palace facade is hung with enormous plain deep-red banners reaching from the cornice all the way to the ground, and more hang from every building on the square. The banners are plain: no emblem, no symbol, no lettering of any kind on them. A long row of tall flagpoles with plain red pennants lines the square. A speaker's rostrum stands in front of the palace portal. A dense, orderly, silent crowd fills the square. Dark evening, hard white floodlight beams cutting straight up into the night sky.`
-**MOTION:** `The torch column marches in step. Huge banners ripple heavily. Torch flames flicker. Crowd static and dense.`
+**EDIT:** `A grey overcast weekday on the square. Two long plain deep-red banners hang from the palace facade and one from the museum — plain cloth, with no emblem, no symbol and no lettering of any kind on any of them. New official noticeboards with plain paper sheets stand at the corners of the square. A pair of uniformed men in plain brown coats and peaked caps walk slowly across the paving. Otherwise ordinary weekday life: pedestrians with briefcases and shopping bags, a few parked cars, a tram passing, a newspaper kiosk. Noticeably fewer people than in the previous frame and nobody standing about. Flat cold daylight, drained colours.`
+**MOTION:** `The three banners hang almost still and lift slightly in a light wind. The two uniformed men walk slowly across the paving. A tram passes. A few pedestrians cross without stopping. Paper sheets flutter on the noticeboards. Grey clouds move slowly. A quiet, emptied-out frame.`
 
 ### 54 · 1936 · The Games
 **EDIT:** `Olympic decoration: banners showing five interlocking rings hung alongside the plain red banners, a long row of flagpoles across the square, visitors with cameras, tour buses at the kerb, everything scrubbed and freshly repainted. Bright summer light.`
