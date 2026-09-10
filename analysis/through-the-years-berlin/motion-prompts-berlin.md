@@ -651,7 +651,7 @@ melts, grows, or disappears. Motion is slow, subtle and ambient only.
 Traffic flows around the signal tower. Neon flickers on. Dense pedestrian crowd. Flower stall vendor moves.
 ```
 
-### Кадр 53 · 1933 · The Flags — 8 секунд
+### Кадр 53 · 1933 · The Banners — 8 секунд
 
 ```
 Static locked-off camera on a tripod. Absolutely no camera movement: no zoom, no

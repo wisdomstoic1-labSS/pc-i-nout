@@ -437,7 +437,7 @@ genuinely empty - flat ground with nothing standing on it.
 **MOTION:** `Carriages circling the square. Guards at the portal. Pigeons around the new dome. Crowd on the parade ground.`
 
 ### 44 · 1871 · The Empire
-**EDIT:** `Imperial celebration: black-white-red flags on every facade and on the palace dome, a victory parade of troops and captured cannon crossing the square, dense crowd behind barriers, garlands on the museum columns.`
+**EDIT:** `Imperial celebration on the square. Long vertical cloth banners, each with three horizontal stripes of black, white and red, hang from every facade and from the palace dome. Garlands are strung between the museum columns and across the street. A procession of open carriages and a marching band crosses the square. A dense festive crowd in top hats and bonnets fills the pavements, flower sellers among them. Bright festive light, everything freshly painted.`
 **MOTION:** `The parade moves slowly across the frame. Dozens of flags in the wind. Dense crowd waving. Dust.`
 
 ### 45 · 1880 · Gründerzeit
@@ -478,12 +478,12 @@ genuinely empty - flat ground with nothing standing on it.
 **EDIT:** `Add neon signs on the buildings at the left, a cinema front, taxis in a rank, well-dressed crowds, a flower stall, and the first traffic tower with signal lights in the middle of the square.`
 **MOTION:** `Traffic flows around the signal tower. Neon flickers on. Dense pedestrian crowd. Flower stall vendor moves.`
 
-### 53 · 1933 · The Flags
-**EDIT:** `Long red banners with a black emblem hang the full height of the palace facade and from every building. A torchlit column marches across the square in ranks. Crowd behind barriers with raised arms. Dark evening light, orange torch glow.`
+### 53 · 1933 · The Banners
+**EDIT:** `The palace facade is hung with enormous plain deep-red banners reaching from the cornice all the way to the ground, and more hang from every building on the square. The banners are plain: no emblem, no symbol, no lettering of any kind on them. A long row of tall flagpoles with plain red pennants lines the square. A speaker's rostrum stands in front of the palace portal. A dense, orderly, silent crowd fills the square. Dark evening, hard white floodlight beams cutting straight up into the night sky.`
 **MOTION:** `The torch column marches in step. Huge banners ripple heavily. Torch flames flicker. Crowd static and dense.`
 
 ### 54 · 1936 · The Games
-**EDIT:** `Olympic decoration: five-ring banners alongside the red ones, flagpoles in a long row across the square, visitors with cameras, tour buses, everything scrubbed and repainted. Bright summer light.`
+**EDIT:** `Olympic decoration: banners showing five interlocking rings hung alongside the plain red banners, a long row of flagpoles across the square, visitors with cameras, tour buses at the kerb, everything scrubbed and freshly repainted. Bright summer light.`
 **MOTION:** `Rows of flags moving together. Tour buses pull up. Tourists photographing. Busy, cheerful crowd.`
 
 ### 55 · 1939 · War Again

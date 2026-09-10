@@ -2975,7 +2975,7 @@ design, and never make the ruins smooth or sculpted. When the plot is empty, it 
 genuinely empty - flat ground with nothing standing on it.
 
 CHANGE:
-Imperial celebration: black-white-red flags on every facade and on the palace dome, a victory parade of troops and captured cannon crossing the square, dense crowd behind barriers, garlands on the museum columns.
+Imperial celebration on the square. Long vertical cloth banners, each with three horizontal stripes of black, white and red, hang from every facade and from the palace dome. Garlands are strung between the museum columns and across the street. A procession of open carriages and a marching band crosses the square. A dense festive crowd in top hats and bonnets fills the pavements, flower sellers among them. Bright festive light, everything freshly painted.
 ```
 
 ### Кадр 45 · 1880 · Gründerzeit
@@ -3687,7 +3687,7 @@ CHANGE:
 Add neon signs on the buildings at the left, a cinema front, taxis in a rank, well-dressed crowds, a flower stall, and the first traffic tower with signal lights in the middle of the square.
 ```
 
-### Кадр 53 · 1933 · The Flags
+### Кадр 53 · 1933 · The Banners
 
 > Вход: кадр 52 + мастер-плита группы D.
 
@@ -3772,7 +3772,7 @@ design, and never make the ruins smooth or sculpted. When the plot is empty, it 
 genuinely empty - flat ground with nothing standing on it.
 
 CHANGE:
-Long red banners with a black emblem hang the full height of the palace facade and from every building. A torchlit column marches across the square in ranks. Crowd behind barriers with raised arms. Dark evening light, orange torch glow.
+The palace facade is hung with enormous plain deep-red banners reaching from the cornice all the way to the ground, and more hang from every building on the square. The banners are plain: no emblem, no symbol, no lettering of any kind on them. A long row of tall flagpoles with plain red pennants lines the square. A speaker's rostrum stands in front of the palace portal. A dense, orderly, silent crowd fills the square. Dark evening, hard white floodlight beams cutting straight up into the night sky.
 ```
 
 ### Кадр 54 · 1936 · The Games
@@ -3860,7 +3860,7 @@ design, and never make the ruins smooth or sculpted. When the plot is empty, it 
 genuinely empty - flat ground with nothing standing on it.
 
 CHANGE:
-Olympic decoration: five-ring banners alongside the red ones, flagpoles in a long row across the square, visitors with cameras, tour buses, everything scrubbed and repainted. Bright summer light.
+Olympic decoration: banners showing five interlocking rings hung alongside the plain red banners, a long row of flagpoles across the square, visitors with cameras, tour buses at the kerb, everything scrubbed and freshly repainted. Bright summer light.
 ```
 
 ### Кадр 55 · 1939 · War Again
