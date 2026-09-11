@@ -48,8 +48,8 @@ def short(sec):
     return f"{int(sec) // 60}:{int(sec) % 60:02d}"
 
 
-def plate(i):
-    return next(v for k, v in sorted(PLATES.items(), reverse=True) if i >= k)
+def plate(i, single=False):
+    return "A" if single else next(v for k, v in sorted(PLATES.items(), reverse=True) if i >= k)
 
 
 def main():
@@ -57,6 +57,8 @@ def main():
     ap.add_argument("source", help="файл сценария кадров, prompts-*.md")
     a = ap.parse_args()
     src = Path(a.source).resolve()
+    text = src.read_text(encoding="utf-8")
+    single = [p for p in "ABCD" if re.search(rf"^### CAMERA {p} ", text, re.M)] == ["A"]
     frames = parse(src)
     base, city = src.parent, src.stem.replace("prompts-", "")
     rows = list(spans(len(frames)))
@@ -84,8 +86,8 @@ def main():
     ]
     for i, s, e in rows:
         _, year, era = frames[i - 1]
-        csv.append(f'{i},{tc(s, ".")},{tc(e, ".")},{e - s:.0f},{plate(i)},"{year}","{era}"')
-        md.append(f"| {i} | {short(s)} | {short(e)} | {plate(i)} | **{year}** | {era} |")
+        csv.append(f'{i},{tc(s, ".")},{tc(e, ".")},{e - s:.0f},{plate(i, single)},"{year}","{era}"')
+        md.append(f"| {i} | {short(s)} | {short(e)} | {plate(i, single)} | **{year}** | {era} |")
 
     (base / f"titles-{city}.csv").write_text("\n".join(csv) + "\n", encoding="utf-8")
     (base / f"titles-{city}.md").write_text("\n".join(md) + "\n", encoding="utf-8")

@@ -47,12 +47,19 @@ def main():
     base = src.parent
     text = src.read_text(encoding="utf-8")
     lock = block_after(text, r"^## MOTION LOCK", "MOTION LOCK")
-    negative = block_after(text, r"^\*\*NEGATIVE:\*\*(?![\s\S]{0,40}smooth surfaces)",
-                           "MOTION NEGATIVE")
+    # Негатив оживления — тот, что идёт после заголовка MOTION LOCK, а не тот,
+    # что относится к картинкам. Искать по содержимому ненадёжно: у разных
+    # городов негатив картинок начинается по-разному.
+    tail = text[text.index("## MOTION LOCK"):] if "## MOTION LOCK" in text else ""
+    if not tail:
+        sys.exit("в источнике не найден блок: MOTION LOCK")
+    negative = block_after(tail, r"^\*\*NEGATIVE:\*\*", "MOTION NEGATIVE")
     frames = parse(src)
 
-    if len(frames) != 75:
-        sys.exit(f"ожидалось 75 кадров, разобрано {len(frames)} — проверь разметку источника")
+    declared = re.search(r"^<!-- frames: (\d+) -->$", text, re.M)
+    expected = int(declared[1]) if declared else 75
+    if len(frames) != expected:
+        sys.exit(f"ожидалось {expected} кадров, разобрано {len(frames)} — проверь разметку источника")
 
     out = [
         "# Промпты оживления — 75 готовых блоков",

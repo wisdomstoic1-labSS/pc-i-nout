@@ -56,16 +56,23 @@ def main():
 
     style = block_after(text, r"^## БЛОК STYLE", "STYLE")
     negative = block_after(text, r"^\*\*NEGATIVE:\*\*", "NEGATIVE")
-    cameras = {p: block_after(text, rf"^### CAMERA {p} ", f"CAMERA {p}") for p in "ABCD"}
+    present = [p for p in "ABCD" if re.search(rf"^### CAMERA {p} ", text, re.M)]
+    if not present:
+        sys.exit("в источнике не найден ни один блок CAMERA")
+    single = present == ["A"]
+    cameras = {p: block_after(text, rf"^### CAMERA {p} ", f"CAMERA {p}") for p in present}
+    anchor_keys = ["A"] if single else ["A", "B", "CD"]
     anchors = {k: block_after(text, rf"^### ANCHORS {k}$", f"ANCHORS {k}")
-               for k in ("A", "B", "CD")}
+               for k in anchor_keys}
     notes = {int(m[1]): m[2].strip().replace("\n", "\n> ")
              for m in re.finditer(r"^#### NOTE (\d+)\n(.*?)(?=\n#### |\n## |\n### |\Z)",
                                   text, re.S | re.M)}
 
     frames = parse_frames(text)
-    if len(frames) != 75:
-        sys.exit(f"ожидалось 75 кадров, разобрано {len(frames)}")
+    declared = re.search(r"^<!-- frames: (\d+) -->$", text, re.M)
+    expected = int(declared[1]) if declared else 75
+    if len(frames) != expected:
+        sys.exit(f"ожидалось {expected} кадров, разобрано {len(frames)}")
 
     city = src.stem.replace("prompts-", "")
     out = [
@@ -92,14 +99,16 @@ def main():
     plate = None
     for f in frames:
         n = f["n"]
-        p = next(v for k, v in sorted(PLATES.items(), reverse=True) if n >= k)
+        p = "A" if single else next(v for k, v in sorted(PLATES.items(), reverse=True) if n >= k)
         if p != plate:
             plate = p
-            out += [f"# ГРУППА {plate}", ""]
+            if not single:
+                out += [f"# ГРУППА {plate}", ""]
 
         out += [f"### Кадр {n} · {f['year']} · {f['title']}", ""]
-        out += [f"> {notes[n]}", ""] if n in notes else \
-               [f"> Вход: кадр {n - 1} + мастер-плита группы {plate}.", ""]
+        default_note = (f"Вход: кадр {n - 1} + мастер-плита." if single
+                        else f"Вход: кадр {n - 1} + мастер-плита группы {plate}.")
+        out += [f"> {notes[n]}", ""] if n in notes else [f"> {default_note}", ""]
 
         out += ["```",
                 "BASE IMAGE: none. This is the first frame of the series - generate it "
@@ -111,7 +120,7 @@ def main():
                 "CHANGE below.",
                 "", "STYLE:", style,
                 "", "CAMERA:", cameras[plate],
-                "", anchors["CD" if plate in ("C", "D") else plate],
+                "", anchors["A" if single else ("CD" if plate in ("C", "D") else plate)],
                 "", "CHANGE:", REFRAME if n in (19, 51) else f["body"],
                 "```", ""]
 
