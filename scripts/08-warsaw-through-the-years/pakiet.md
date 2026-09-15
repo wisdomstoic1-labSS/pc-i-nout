@@ -90,6 +90,59 @@ Knaagdier, и Oncle. Не формальность: она снимает воп
 
 ---
 
+## 2b. Описание — вариант B, авторская подача
+
+Вторая форма описания: без глав, зато с личной интонацией и прогоном по эпохам.
+Так оформлен лондонский ролик MJ (462К) — и там это работает на двух уровнях:
+читается как живая речь автора, а перечисление эпох заодно набивает описание
+поисковыми словами без единого «ключевика» в лоб.
+
+```
+My own run at the "through the years" format, this time on Warsaw — one square
+above the Vistula, held in frame from 8000 BC all the way to 2075.
+
+We start on bare glacial ground and work up through the primeval forest, the
+first Bronze Age clearing, a Lusatian settlement, the amber trade route, the
+migration period, the Slavic stronghold and the dukes of Masovia — all before
+the town of Warszowa is founded at all. From there: the brick Gothic town, the
+Renaissance, the Swedish Deluge that burns it to the ground, the Baroque
+rebuild, the Saxon era, the Enlightenment, the Partitions, Napoleon's duchy,
+the November Uprising, industrial Warsaw, the Belle Epoque and independence.
+
+Then the twentieth century up close — the interwar city, 1939, the Uprising,
+the eighty-five percent of Warsaw that was left in rubble, and the rebuilding
+that followed, done partly from eighteenth-century paintings of the same
+streets.
+
+Finally two possible futures on that same square: one green and rebuilt again,
+one overgrown and gone dark.
+
+Same viewpoint. Same ground. Seventy-five times.
+
+Inspired by The Bling-Bling Cheese's "Through the Years in Minecraft" and by
+Knaagdier's city videos.
+
+All visuals are AI-generated in a voxel style. The years mark turning points in
+the city's story rather than exact construction dates.
+
+#evolution #warsaw #history #timelapse #voxel
+```
+
+**Чем отличается от варианта 2.** Тот построен на главах и прямых подсказках
+«следи за деревом»: он лучше держит удержание и даёт навигацию. Этот — на
+авторской интонации и плотном перечне эпох: лучше читается, сильнее работает на
+поиск по длинному хвосту (Lusatian, Masovia, Deluge, Partitions, November
+Uprising), но не даёт зрителю кнопок для перемотки.
+
+**Что брать.** Если ставишь главы — вариант 2. Если хочешь описание, которое
+читают целиком и которое ловит запросы по эпохам — этот. Совмещать не стоит:
+главы под таким текстом убивают его интонацию, а сам он станет вдвое длиннее
+видимой части.
+
+Абзац про восстановление по картинам оставлен намеренно: это самый цепкий факт
+во всей варшавской истории и готовый повод для комментариев.
+
+---
 ## 3. Теги
 
 ```
